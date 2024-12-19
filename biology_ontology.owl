@@ -1,0 +1,65 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:bio="http://example.org/biology#">
+
+    <owl:Ontology rdf:about="http://example.org/biology"/>
+
+    <owl:Class rdf:about="bio:Organelle"/>
+
+    <!-- Mitochondrion -->
+    <rdf:Description rdf:about="bio:Mitochondrion">
+        <rdf:type rdf:resource="bio:Organelle"/>
+        <bio:function>Powerhouse of the cell.</bio:function>
+        <bio:function>Produces ATP through cellular respiration.</bio:function>
+        <bio:function>Regulates cellular metabolism.</bio:function>
+        <bio:function>Stores calcium for cell signaling.</bio:function>
+        <bio:function>Helps in apoptosis (programmed cell death).</bio:function>
+        <bio:diagram>mitochondrion.png</bio:diagram>
+    </rdf:Description>
+
+    <!-- Nucleus -->
+    <rdf:Description rdf:about="bio:Nucleus">
+        <rdf:type rdf:resource="bio:Organelle"/>
+        <bio:function>Contains the cell's genetic material.</bio:function>
+        <bio:function>Regulates gene expression.</bio:function>
+        <bio:function>Controls cell growth and reproduction.</bio:function>
+        <bio:function>Stores chromatin (DNA and proteins).</bio:function>
+        <bio:function>Synthesizes ribosomal RNA (rRNA).</bio:function>
+        <bio:diagram>nucleus.png</bio:diagram>
+    </rdf:Description>
+
+    <!-- Lysosome -->
+    <rdf:Description rdf:about="bio:Lysosome">
+        <rdf:type rdf:resource="bio:Organelle"/>
+        <bio:function>Breaks down waste materials.</bio:function>
+        <bio:function>Digests worn-out organelles.</bio:function>
+        <bio:function>Recycles cellular components.</bio:function>
+        <bio:function>Defends against invading pathogens.</bio:function>
+        <bio:function>Helps in cell renewal processes.</bio:function>
+        <bio:diagram>lysosome.png</bio:diagram>
+    </rdf:Description>
+
+    <!-- Endoplasmic Reticulum -->
+    <rdf:Description rdf:about="bio:EndoplasmicReticulum">
+        <rdf:type rdf:resource="bio:Organelle"/>
+        <bio:function>Synthesizes proteins (Rough ER).</bio:function>
+        <bio:function>Synthesizes lipids (Smooth ER).</bio:function>
+        <bio:function>Transports synthesized molecules within the cell.</bio:function>
+        <bio:function>Detoxifies chemicals (Smooth ER).</bio:function>
+        <bio:function>Stores calcium for cellular activities.</bio:function>
+        <bio:diagram>endoplasmic_reticulum.png</bio:diagram>
+    </rdf:Description>
+
+    <!-- Golgi Apparatus -->
+    <rdf:Description rdf:about="bio:GolgiApparatus">
+        <rdf:type rdf:resource="bio:Organelle"/>
+        <bio:function>Modifies proteins and lipids.</bio:function>
+        <bio:function>Sorts and packages molecules for transport.</bio:function>
+        <bio:function>Synthesizes certain macromolecules.</bio:function>
+        <bio:function>Forms lysosomes.</bio:function>
+        <bio:function>Involved in secretion of cell products.</bio:function>
+        <bio:diagram>golgi_apparatus.png</bio:diagram>
+    </rdf:Description>
+
+</rdf:RDF>
